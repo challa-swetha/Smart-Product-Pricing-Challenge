@@ -31,6 +31,19 @@ A blended ensemble of two gradient boosting models was trained on the fused feat
 
 Clone this repository to your local machine:
 
-```bash
-git clone [https://github.com/YOUR_USERNAME/product-pricing-challenge.git](https://github.com/YOUR_USERNAME/product-pricing-challenge.git)
-cd product-pricing-challenge
+git clone https://github.com/challa-swetha/Smart-Product-Pricing-Challenge.git
+cd Smart-Product-Pricing-Challenge
+
+### 2. Install Dependencies
+
+Install all required packages:
+
+pip install -r requirements.txt
+
+### 3. Run the Pipeline
+
+Open and run the solution notebook:
+
+jupyter notebook solution.ipynb
+
+Running all cells in the notebook will execute the full pipeline — feature extraction (vision + text embeddings), model training (LightGBM + XGBoost), and blending — and will generate `test_out.csv` containing the final predicted prices for the test set.

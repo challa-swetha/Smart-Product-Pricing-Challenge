@@ -1,5 +1,4 @@
-# Smart-Product-Pricing-Challenge
-A multi-modal ensemble model for smart product pricing.
+
 # Smart Product Pricing Challenge 🛍️
 
 This project is a solution for the Smart Product Pricing Challenge. It uses a state-of-the-art multi-modal ensemble model to predict product prices based on their images and text descriptions.

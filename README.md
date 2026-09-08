@@ -2,6 +2,12 @@
 # Smart Product Pricing Challenge 🛍️
 
 This project is a solution for the Smart Product Pricing Challenge. It uses a state-of-the-art multi-modal ensemble model to predict product prices based on their images and text descriptions.
+## Results 📊
+
+| Model | SMAPE (%) |
+| **Final Blended Ensemble (LightGBM + XGBoost)** | **43.33%** |
+
+Trained on 74,999 samples with a fused 2,306-dimension feature vector (vision + text + numerical), validated on a 15% held-out split.
 
 ## Methodology 🤖
 

@@ -42,7 +42,7 @@ Three distinct feature sets were generated:
 A blended ensemble of two gradient boosting models was trained on the fused feature set:
 
 1.  **LightGBM Regressor** 
-2.  **XGBoost Regressor** (using `tree_method='gpu_hist'` for GPU acceleration)
+2.  **XGBoost Regressor** 
 
 The predictions from both models were blended using an optimized weighted average to achieve the lowest SMAPE score. 
 

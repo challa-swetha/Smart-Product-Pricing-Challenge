@@ -2,6 +2,22 @@
 # Smart Product Pricing Challenge 🛍️
 
 This project is a solution for the Smart Product Pricing Challenge. It uses a state-of-the-art multi-modal ensemble model to predict product prices based on their images and text descriptions.
+
+## Dataset 📦
+
+This project uses a product pricing dataset (Amazon ML Challenge format) 
+consisting of ~75,000 product listings for training and 75,000 for testing.
+Each listing includes:
+
+- **`catalog_content`** — the product's text description/title
+- **A product image**, linked via `sample_id`
+- **Derived numerical features** — pack size / item quantity and 
+  weight or volume, automatically extracted from the product description 
+  using regex parsing (e.g. "pack of 6", "500 ml", "2.5 lb")
+- **Target variable** — the product's price
+
+Of the 74,999 training samples, 15% was held out as a validation split 
+to tune the ensemble blend weight and measure SMAPE.
 ## Results 📊
 
 | Model | SMAPE (%) |
